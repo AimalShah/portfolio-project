@@ -26,7 +26,6 @@ export default function Hero() {
           <FontAwesomeIcon icon={faTwitter} className='size-8 text-[#737373]' />
           <FontAwesomeIcon icon={faInstagram} className='size-8 text-[#737373]' />
           <FontAwesomeIcon icon={faWhatsapp} className='size-8 text-[#737373]' />
-
         </div>
         </div>
         <div className="mt-40 w-10/12 lg:flex items-center justify-center  hidden">
