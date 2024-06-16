@@ -26,7 +26,7 @@ export default function Navbar() {
 
     return (
         <div className="container mx-auto fixed lg:bottom-100 lg:top-4 bottom-5">
-            <div className="max-w-md mx-auto flex gap-4 lg:justify-between  justify-center items-center rounded-md p-3 bg-[#171717] border-[#737373] border">
+            <div className="max-w-md mx-auto flex gap-4 lg:justify-between  justify-center items-center rounded-md lg:p-3 p-4 bg-[#171717] border-[#737373] border">
                <div className="hidden lg:block">
                 <img src={LOGO} alt="" className="w-6"/>
                </div>
