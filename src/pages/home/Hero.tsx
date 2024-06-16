@@ -3,6 +3,7 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter} from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+
 export default function Hero() {
   return (
     <div className="max-w-6xl h-screen flex lg:flex-row justify-between gap-4 mx-auto">
