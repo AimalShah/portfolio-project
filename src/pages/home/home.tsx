@@ -16,7 +16,7 @@ export default function Home() {
           <div className="flex flex-wrap gap-4 lg:justify-start justify-center">
           {
             projects.map((project : number) =>(
-              <ProjectCard image={url} title="Project Name"/>
+              <ProjectCard image={url} title="Project Name" key={project}/>
             ))
           }
           </div>
