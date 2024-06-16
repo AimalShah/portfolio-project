@@ -6,7 +6,7 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 export default function Hero() {
   return (
-    <div className="max-w-6xl h-screen flex lg:flex-row justify-between gap-4 mx-auto">
+    <div className="max-w-6xl flex lg:flex-row justify-between gap-4 mx-auto">
       <div className="lg:mt-40 mt-10 lg:text-left text-center space-y-6 max-w-2xl">
           <div className="flex lg:justify-start items-center gap-4 justify-center">
             <img src="https://reactfolio.tharindu.dev/logo.png" alt="" 
@@ -29,7 +29,7 @@ export default function Hero() {
         </div>
         </div>
         <div className="mt-40 w-10/12 lg:flex items-center justify-center  hidden">
-          <img src="https://reactfolio.tharindu.dev/homepage.jpg" alt=""  className="w-80 rounded-lg rotate-3 border  border-white"/>
+          <img src="https://utfs.io/f/bcabfcb5-d9e2-4afe-aca6-5abb61c37717-cmsm2n.jpg" alt=""  className="saturate-0 hover:saturate-50 w-80 rounded-lg rotate-3 border  border-white"/>
         </div>
     </div>
   )

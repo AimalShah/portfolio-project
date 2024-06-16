@@ -17,31 +17,33 @@ export default function Home() {
        <ProjectsSec projects={projects} url={url} />
        <div className="flex gap-4 lg:flex-row flex-col">
        <ArticleSec />
-        <div className="bg-[#737373]/10 lg:w-1/2 w-full p-4 rounded-xl lg:m-0 box-border">
-          <h1 className="text-2xl font-semibold mb-2">Contact</h1>
+       <div className="w-full flex items-center lg:p-0 p-2">
+        <div className="bg-[#737373]/10 lg:w-full w-full p-4 rounded-xl lg:m-0 box-border">
+          <h1 className="text-3xl font-semibold mb-4">Contact</h1>
           <div className='flex justify-center flex-col gap-4 h-full lg:text-left text-center'>
            <div className="flex gap-2 items-center">
-          <FontAwesomeIcon icon={faFacebook} className='size-8 text-[#737373]' />
-          <p className="text-lg font-semibold text-[#737373]">Facebook</p>
+          <FontAwesomeIcon icon={faFacebook} className='size-6 text-[#737373]' />
+          <p className="text-sm font-semibold text-[#737373]">Facebook</p>
           </div> 
           <div className="flex gap-2 items-center">
-          <FontAwesomeIcon icon={faTwitter} className='size-8 text-[#737373]' />
-          <p className="text-lg font-semibold text-[#737373]">Twitter</p>
+          <FontAwesomeIcon icon={faTwitter} className='size-6 text-[#737373]' />
+          <p className="text-sm font-semibold text-[#737373]">Twitter</p>
           </div>
           <div className="flex gap-2 items-center">
-          <FontAwesomeIcon icon={faInstagram} className='size-8 text-[#737373]' />
-          <p className="text-lg  font-semibold text-[#737373]">Instagram</p>
+          <FontAwesomeIcon icon={faInstagram} className='size-6 text-[#737373]' />
+          <p className="text-sm  font-semibold text-[#737373]">Instagram</p>
           </div>
           <div className="flex gap-2 items-center">
-          <FontAwesomeIcon icon={faWhatsapp} className='size-8 text-[#737373]' />
-          <p className="text-lg  font-semibold text-[#737373]">Whatsapp</p>
+          <FontAwesomeIcon icon={faWhatsapp} className='size-6 text-[#737373]' />
+          <p className="text-sm  font-semibold text-[#737373]">Whatsapp</p>
           </div>
           <div className="flex gap-2 items-center">
-          <FontAwesomeIcon icon={faEnvelope} className='size-8 text-[#737373]' />
-          <p className="text-lg font-semibold text-[#737373]">info@khalidzarar.com</p>
+          <FontAwesomeIcon icon={faEnvelope} className='size-6 text-[#737373]' />
+          <p className="text-sm font-semibold text-[#737373]">info@khalidzarar.com</p>
           </div>
         </div>
-        </div>
+       </div>
+       </div>
        </div>
     </div>
   )

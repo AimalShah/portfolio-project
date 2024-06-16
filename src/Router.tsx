@@ -4,6 +4,8 @@ import About from './pages/about/about'
 import Contact from './pages/contact/contact'
 import Blogs from './pages/blogs/blogs'
 import NotFound from './pages/404'
+import Projects from './pages/projects/projects'
+
 import App from './App'
 
 export default function Router() {
@@ -15,6 +17,8 @@ export default function Router() {
         <Route path='about' element={<About/>} />
         <Route path='blogs' element={<Blogs/>} />
         <Route path='contact' element={<Contact/>} />
+        <Route path='projects' element={<Projects/>} />
+
         </Route>
         <Route path='*' errorElement element={<NotFound/>} />
         </>
