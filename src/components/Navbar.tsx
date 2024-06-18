@@ -26,8 +26,8 @@ export default function Navbar() {
     ];
 
     return (
-        <div className="max-w-md h-fit left-1/2 transform -translate-x-1/2 mx-auto fixed lg:bottom-100 lg:top-4 bottom-5 z-30 ">
-            <div className="max-w-md mx-auto flex gap-4 lg:justify-between  justify-center items-center rounded-xl lg:p-3 p-4 dark:bg-[#171717] bg-primary-foreground darK:border-[#737373] border">
+        <div className="max-w-md h-fit left-1/2 transform -translate-x-1/2 mx-auto fixed lg:bottom-100 lg:top-4 bottom-5 z-30 lg:p-0 px-4">
+            <div className="max-w-md mx-auto flex gap-4 lg:justify-between justify-center items-center rounded-xl lg:p-3 py-2 px-2 dark:bg-[#171717] bg-primary-foreground darK:border-[#737373] border ">
                <div className="hidden lg:block">
                 <img src={LOGO} alt="" className="w-6"/>
                </div>

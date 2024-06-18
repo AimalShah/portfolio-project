@@ -30,7 +30,7 @@ export default function Hero() {
         </div>
         </div>
         <div className="mt-40 w-10/12 lg:flex items-center justify-center md:hidden hidden">
-          <img src="https://utfs.io/f/bcabfcb5-d9e2-4afe-aca6-5abb61c37717-cmsm2n.jpg" alt=""  className="saturate-0 hover:saturate-50 w-80 rounded-lg rotate-3 border  border-white"/>
+          <img src="https://utfs.io/f/bcabfcb5-d9e2-4afe-aca6-5abb61c37717-cmsm2n.jpg" alt=""  className="dark:saturate-0 dark:hover:saturate-50 w-80 rounded-lg rotate-3 border  border-white"/>
         </div>
     </div>
   )

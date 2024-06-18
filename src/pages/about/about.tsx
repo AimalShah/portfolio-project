@@ -6,7 +6,7 @@ export default function About() {
     <div className="max-w-6xl mx-auto flex lg:flex-row flex-col gap-8 lg:mt-40 mt-14 ">
       <div className="flex items-center justify-center">
         <img src="https://utfs.io/f/bcabfcb5-d9e2-4afe-aca6-5abb61c37717-cmsm2n.jpg" 
-        className="size-20 rounded-full lg:hidden saturate-0"
+        className="size-20 rounded-full lg:hidden dark:saturate-0"
         alt="" />
       </div>
       <div className="max-w-2xl space-y-4 lg:p-0 p-2">  
@@ -16,7 +16,7 @@ export default function About() {
       <div className="flex-grow w-full space-y-8 flex flex-col items-center">
         <img src="https://utfs.io/f/bcabfcb5-d9e2-4afe-aca6-5abb61c37717-cmsm2n.jpg" 
         alt=""
-        className="lg:w-80 w-60 rounded-lg rotate-3 border  border-white lg:block hidden hover:saturate-50 saturate-0" />
+        className="lg:w-80 w-60 rounded-lg rotate-3 border  border-white lg:block hidden dark:hover:saturate-50 dark:saturate-0" />
         <ContactInfo />
        </div>
     </div>

@@ -18,13 +18,13 @@ export default function ArticleSec() {
   }, [])
   if(loading) {
     return (
-      <div className="lg:w-[38rem] flex justify-center items-center">
+      <div className="lg:w-[38rem]  flex justify-center items-center">
         <div className="size-10 rounded-full border-t-white border-r-white border-2 animate-spin" />
       </div>
     )
   }
   return (
-    <div className="max-w-xl mt-10">
+    <div className="lg:max-w-xl mt-10 lg:px-0 px-4">
      {
       blogs.map((blog : any) => (
         <div key={blog._id}>
