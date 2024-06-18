@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import { opacity ,slideUp } from './anim';
 import "./style.css"
 
-const words = ["Hello" ,"&" , "Welcome" , "to" , "my" , "Portfolio"]
+const words = ["HELLO", "WELCOME" , "TO" , "MY" , "WEBSITE"]
 
-export default function Index() {
+export default function Preloader() {
     const [index, setIndex] = useState(0);
     const [dimension, setDimension] = useState({width: 0, height:0});
 

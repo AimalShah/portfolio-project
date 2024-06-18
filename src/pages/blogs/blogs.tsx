@@ -7,10 +7,7 @@ export default function Blogs() {
   const [blogs, setBlogs] = useState([])
 const [loading , setLoading] = useState<boolean>(true)
 useEffect(() => {
-  client.fetch(`*[_type == "post"] { slug , _id , publishedAt , title ,body ,  mainImage {
-  ...,
-  asset->
-}} `)
+  client.fetch(`*[_type == "post"] { slug , _id , publishedAt , title ,body } `)
     .then((data) => {
       setLoading(false)
       setBlogs(data)
@@ -19,14 +16,17 @@ useEffect(() => {
     .catch(err => console.log(err))
 }, [])
 if(loading) {
-  return <div className="max-w-xl mt-10 font-lg">Loading</div>
+  return (<div className="grid place-items-center font-lg h-screen">
+        <div className="size-20 rounded-full border-t-white border-r-white border-2 animate-spin">
+        </div>
+      </div>)
 }
   return (
-   <div className="mt-40 max-w-6xl mx-auto">
+   <div className="lg:mt-40 mt-10 max-w-6xl mx-auto lg:p-0 p-4">
       <div className="flex gap-4 flex-wrap">
       {
       blogs.map((blog : any) => (
-        <div key={blog._id} className="max-w-lg min-w-[30rem]">
+        <div key={blog._id} className="max-w-lg lg:min-w-[30rem] min-w-40">
         <ArticleCard title={blog.title} time={blog.publishedAt} body={blog.body.slice(0,1)} slug={blog.slug.current} />
         <Separator/>
         </div>

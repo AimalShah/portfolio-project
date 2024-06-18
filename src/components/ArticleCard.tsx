@@ -11,7 +11,7 @@ export function ArticleCard({title , time , body , slug} : {title : string; time
             </div>
             <div className="space-y-2">
                 <h1 className="text-lg font-semibold">{title}</h1>
-                <p className="truncate text-nowrap text-sm text-[#737373]">
+                <p className="text-wrap truncate text-sm text-[#737373]">
                     <PortableText
                     value={body}
                     />

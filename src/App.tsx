@@ -1,9 +1,9 @@
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
 import { Outlet } from "react-router-dom"
-import Index from "./components/preLoader";
 import { useEffect, useState } from 'react'
 import { AnimatePresence } from 'framer-motion';
+import Preloader from "./components/preLoader";
 
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <AnimatePresence mode='wait'>
-        {isLoading && <Index />}
+        {isLoading && <Preloader />}
       </AnimatePresence>
       <Navbar />
       <Outlet/>

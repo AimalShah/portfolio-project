@@ -8,10 +8,7 @@ export default function ArticleSec() {
   const [blogs, setBlogs] = useState([])
   const [loading , setLoading] = useState<boolean>(true)
   useEffect(() => {
-    client.fetch(`*[_type == "post"] { slug , _id , publishedAt , title ,body ,  mainImage {
-    ...,
-    asset->
-  }} `)
+    client.fetch(`*[_type == "post"] { slug , _id , publishedAt , title ,body} `)
       .then((data) => {
         setLoading(false)
         setBlogs(data.splice(0,2))
@@ -20,7 +17,11 @@ export default function ArticleSec() {
       .catch(err => console.log(err))
   }, [])
   if(loading) {
-    return <div className="max-w-xl mt-10 font-lg">Loading</div>
+    return (
+      <div className="lg:w-[38rem] flex justify-center items-center">
+        <div className="size-10 rounded-full border-t-white border-r-white border-2 animate-spin" />
+      </div>
+    )
   }
   return (
     <div className="max-w-xl mt-10">

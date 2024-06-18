@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import LOGO from "../../public/vite.svg"
+import { ModeToggle } from "./mode-toggle";
 export default function Navbar() {
     const routes = [
         {
@@ -26,29 +27,32 @@ export default function Navbar() {
 
     return (
         <div className="max-w-md h-fit left-1/2 transform -translate-x-1/2 mx-auto fixed lg:bottom-100 lg:top-4 bottom-5 z-30 ">
-            <div className="max-w-md mx-auto flex gap-4 lg:justify-between  justify-center items-center rounded-xl lg:p-3 p-4 bg-[#171717] border-[#737373] border">
+            <div className="max-w-md mx-auto flex gap-4 lg:justify-between  justify-center items-center rounded-xl lg:p-3 p-4 dark:bg-[#171717] bg-primary-foreground darK:border-[#737373] border">
                <div className="hidden lg:block">
                 <img src={LOGO} alt="" className="w-6"/>
                </div>
 
                  <div className="flex gap-4">
-                 <NavLink to={routes[0].Link} className={({isActive}) => isActive ? "text-white text-sm" : "text-sm text-[#737373]"}>
+                 <NavLink to={routes[0].Link} className={({isActive}) => isActive ? "dark:text-white text-sm" : "text-sm text-[#737373]"}>
                             {routes[0].Page}
                 </NavLink>
-                <NavLink to={routes[1].Link} className={({isActive}) => isActive ? "text-white text-sm" : "text-sm text-[#737373]"}>
+                <NavLink to={routes[1].Link} className={({isActive}) => isActive ? "dark:text-white text-sm" : "text-sm text-[#737373]"}>
                             {routes[1].Page}
                 </NavLink>
-                <NavLink to={routes[2].Link} className={({isActive}) => isActive ? "text-white text-sm" : "text-sm text-[#737373]"}>
+                <NavLink to={routes[2].Link} className={({isActive}) => isActive ? "dark:text-white text-sm" : "text-sm text-[#737373]"}>
                             {routes[2].Page}
                 </NavLink>
-                <NavLink to={routes[3].Link} className={({isActive}) => isActive ? "text-white text-sm" : "text-sm text-[#737373]"}>
+                <NavLink to={routes[3].Link} className={({isActive}) => isActive ? "dark:text-white text-sm" : "text-sm text-[#737373]"}>
                             {routes[3].Page}
                 </NavLink>
-                <NavLink to={routes[4].Link} className={({isActive}) => isActive ? "text-white text-sm" : "text-sm text-[#737373]"}>
+                <NavLink to={routes[4].Link} className={({isActive}) => isActive ? "dark:text-white text-sm" : "text-sm text-[#737373]"}>
                             {routes[4].Page}
                 </NavLink>
                 </div>       
-                  
+
+                 <div>
+                    <ModeToggle />    
+                </div> 
             </div>
         </div>
     )
