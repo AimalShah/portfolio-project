@@ -11,8 +11,8 @@ export default function Navbar() {
             Link: "/about",
         },
         {
-            Page: "Services",
-            Link: "/services",
+            Page: "Blogs",
+            Link: "/blogs",
         },
         {
             Page: "Projects",

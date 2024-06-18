@@ -5,8 +5,8 @@ import Contact from './pages/contact/contact'
 import Blogs from './pages/blogs/blogs'
 import NotFound from './pages/404'
 import Projects from './pages/projects/projects'
-
 import App from './App'
+import SingleBlog from './pages/blogs/singleBlogPage'
 
 export default function Router() {
     const router =  createBrowserRouter(
@@ -15,10 +15,10 @@ export default function Router() {
         <Route path='/' element={<App/>}>
         <Route path='' element={<Home/>} />
         <Route path='about' element={<About/>} />
-        <Route path='blogs' element={<Blogs/>} />
+        <Route path='blogs' element={<Blogs/>} /> 
+        <Route path='blogs/:id' element={<SingleBlog/>} />
         <Route path='contact' element={<Contact/>} />
         <Route path='projects' element={<Projects/>} />
-
         </Route>
         <Route path='*' errorElement element={<NotFound/>} />
         </>

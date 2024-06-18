@@ -9,16 +9,15 @@ const routes = [
         Link: "/about",
     },
     {
-        Page: "Services",
-        Link: "/services",
-    },
-    {
         Page: "Projects",
         Link: "/projects",
     },
     {
         Page: "Contact",
         Link: "/contact",
+    }, {
+        Page : "Blogs",
+        Link : "/blogs"
     }
 ];
 
@@ -28,7 +27,7 @@ export default function Footer() {
         <div className="space-x-4">
             {
                 routes.map((route : {Page : string; Link : string;}) => (
-                    <Link to={route.Link} className="text-[#737373]">{route.Page}</Link>
+                    <Link to={route.Link} className="text-[#737373]" key={route.Link}>{route.Page}</Link>
                 ))
             }
         </div>
