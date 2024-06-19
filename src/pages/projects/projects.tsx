@@ -5,7 +5,9 @@ import useYouTubeVideo from "@/utils/utils";
 import { projectData } from "@/sanity/project";
 
 export default function Projects() {
+    // @ts-ignore
   const { data, error, loading, getVideoDetails } = useYouTubeVideo();
+    // @ts-ignore
   const [urls, setUrls] = useState<any>([]);
   const [projects, setProjects] = useState<any>([]);
 

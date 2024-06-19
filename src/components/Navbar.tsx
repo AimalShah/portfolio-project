@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import LOGO from "../../public/vite.svg";
 import { ModeToggle } from "./mode-toggle";
 export default function Navbar() {
   const routes = [
