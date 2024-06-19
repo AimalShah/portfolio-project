@@ -11,7 +11,6 @@ useEffect(() => {
     .then((data) => {
       setLoading(false)
       setBlogs(data)
-      console.log("blogs : " + blogs)
     })
     .catch(err => console.log(err))
 }, [])

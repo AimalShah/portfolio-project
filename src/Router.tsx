@@ -7,6 +7,7 @@ import NotFound from './pages/404'
 import Projects from './pages/projects/projects'
 import App from './App'
 import SingleBlog from './pages/blogs/singleBlogPage'
+import SingleProject from './pages/projects/singleProject'
 
 export default function Router() {
     const router =  createBrowserRouter(
@@ -19,6 +20,7 @@ export default function Router() {
         <Route path='blogs/:id' element={<SingleBlog/>} />
         <Route path='contact' element={<Contact/>} />
         <Route path='projects' element={<Projects/>} />
+        <Route path='projects/:id' element={<SingleProject/>} />
         </Route>
         <Route path='*' errorElement element={<NotFound/>} />
         </>

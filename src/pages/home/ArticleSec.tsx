@@ -12,7 +12,6 @@ export default function ArticleSec() {
       .then((data) => {
         setLoading(false)
         setBlogs(data.splice(0,2))
-        console.log("blogs : " + blogs)
       })
       .catch(err => console.log(err))
   }, [])
