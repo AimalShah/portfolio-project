@@ -47,15 +47,15 @@ export default function Services() {
           <li className="font-thin dark:text-[#737373] lg:text-justify text-center lg:pr-8 list-disc">
             <span className="font-semibold text-xl">
               Portfolio of Diverse Projects:
-            </span>{" "}
+            </span>
             <br />
             My portfolio showcases a diverse range of projects, demonstrating my
             versatility and dedication to the art of video editing.
           </li>
-          <li className="font-thin dark:text-[#737373] lg:text-justify text-center pr-8 list-disc">
+          <li className="font-thin dark:text-[#737373] lg:text-justify text-center lg:pr-8 list-disc">
             <span className="font-semibold text-xl">
               Client-Centric Approach:
-            </span>{" "}
+            </span>
             <br /> Committed to understanding and realizing your vision, I
             collaborate closely with clients to deliver results that exceed
             expectations.
