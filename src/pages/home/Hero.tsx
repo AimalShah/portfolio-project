@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faTwitterSquare , faInstagram , faWhatsapp , faLinkedin} from '@fortawesome/free-brands-svg-icons'
+import { faFacebook , faInstagram , faWhatsapp , faLinkedin} from '@fortawesome/free-brands-svg-icons'
 
 export default function Hero() {
   return (
