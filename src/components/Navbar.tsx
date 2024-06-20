@@ -35,7 +35,7 @@ export default function Navbar() {
           />
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex lg:gap-4 gap-2">
           <NavLink
             to={routes[0].Link}
             className={({ isActive }) =>
