@@ -74,7 +74,8 @@ module.exports = {
       fontFamily : {
         inter : '"Inter", sans-serif',
         roboto : '"Roboto", sans-serif',
-        heebo : '"Heebo", sans-serif'
+        heebo : '"Heebo", sans-serif',
+        montserrat : '"Montserrat", sans-serif'
       }
     },
   },

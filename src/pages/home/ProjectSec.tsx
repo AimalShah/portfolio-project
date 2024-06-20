@@ -35,7 +35,7 @@ export default function ProjectsSec() {
     <div className="lg:mt-20 mt-20 space-y-10 lg:text-start text-center ">
       <div>
         <h1 className="text-6xl font-bold">Projects</h1>
-        <p className="lg:w-[60%] lg:p-0 p-2 mt-4 dark:text-[#737373] font-thin">
+        <p className="lg:w-[60%] lg:p-0 p-2 mt-4 dark:text-[#737373] font-light">
           {" "}
           I strive to push the boundaries of design, crafting visually
           compelling narratives that leave a lasting impression. Explore these

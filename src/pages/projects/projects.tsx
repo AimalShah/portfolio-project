@@ -35,10 +35,10 @@ export default function Projects() {
 
   return (
     <div className="max-w-6xl mx-auto lg:mt-40 mt-14 lg:p-0 p-2 space-y-6">
-      <h1 className="lg:text-6xl text-3xl lg:text-start text-center lg:max-w-3xl font-semibold">
+      <h1 className="lg:text-6xl text-3xl lg:text-start text-center lg:max-w-4xl font-semibold">
         Things I’ve made trying to put my dent in the universe.
       </h1>
-      <p className="font-thin dark:text-[#737373] lg:text-justify text-center">
+      <p className="font-light dark:text-[#737373] lg:text-justify text-center">
         I bring over two and a half years of continuous experience as a
         documentary video editor. My editing workflow utilizes industry-standard
         tools such as Premiere Pro, After Effects, and Photoshop, along with the
