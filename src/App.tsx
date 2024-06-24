@@ -1,10 +1,18 @@
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
-import { Outlet } from "react-router-dom"
+import { Outlet , useLocation } from "react-router-dom"
 import { useEffect, useState } from 'react'
 import { AnimatePresence } from 'framer-motion';
 import Preloader from "./components/preLoader";
 
+function ScrollToTop() {
+  const {pathname} = useLocation()
+  useEffect(() => {
+    window.scrollTo(0,0)
+  } , [pathname]);
+
+  return null;
+}
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -12,9 +20,6 @@ function App() {
   useEffect( () => {
     (
       async () => {
-          // const LocomotiveScroll = (await import('locomotive-scroll')).default
-          // const locomotiveScroll = new LocomotiveScroll();
-
           setTimeout( () => {
             setIsLoading(false);
             document.body.style.cursor = 'default'
@@ -29,6 +34,7 @@ function App() {
       <AnimatePresence mode='wait'>
         {isLoading && <Preloader />}
       </AnimatePresence>
+    <ScrollToTop/>
       <Navbar />
       <Outlet/>
       <Footer />
