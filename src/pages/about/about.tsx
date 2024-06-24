@@ -16,7 +16,7 @@ export default function About() {
           <h1 className="text-3xl lg:text-start text-center lg:text-6xl font-semibold">
             Who Am I?
           </h1>
-          <p className="font-light dark:text-[#737373] lg:text-justify text-center ">
+          <p className="font-normal dark:text-[#737373] lg:text-justify text-center ">
             I'm Muhammad Khalid Zarar, a documentary video editor with over two
             and a half years of continuous experience in the field. My editing
             workflow utilizes industry-standard tools such as{" "}

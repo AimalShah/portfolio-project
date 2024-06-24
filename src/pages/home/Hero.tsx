@@ -16,7 +16,7 @@ export default function Hero() {
           <h1 className="lg:text-6xl text-3xl font-bold">
           Transforming Raw Footage into Art with Passion and Skill
           </h1>
-          <p className="lg:text-justify font-light dark:text-[#737373] lg:p-0 px-4 text-center">
+          <p className="lg:text-justify font-normal dark:text-[#737373] lg:p-0 px-4 text-center">
             As a video editor, I transform raw footage into visually stunning
             narratives that captivate and inspire. With a passion for creativity
             and a meticulous eye for detail, I craft videos that tell compelling
