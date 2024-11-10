@@ -52,14 +52,19 @@ export default function Projects() {
         {loading ? (
           <div>Loading...</div>
         ) : (
-          projects.map((project: any, index: number) => (
-            <ProjectCard
-              image={project.videoDetails.snippet.thumbnails.high.url}
-              title={project.videoDetails.snippet.title}
+          projects.map((project: any, index: number) => {
+            const title = project.videoDetails?.snippet?.title || "Untitled Project";
+          const imageUrl = project.videoDetails?.snippet?.thumbnails?.high?.url ||
+            "https://via.placeholder.com/150"; 
+            return(
+              <ProjectCard
+              image={imageUrl}
+              title={title}
               key={index}
               id={project._id}
-            />
-          ))
+              />
+            )
+})
         )}
         {error && <div>{error}</div>}
       </div>

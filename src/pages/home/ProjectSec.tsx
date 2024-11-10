@@ -7,7 +7,7 @@ export default function ProjectsSec() {
   const { data, error, loading, getVideoDetails } = useYouTubeVideo();
   // @ts-ignore
   const [urls, setUrls] = useState<any>([]);
-  const [projects, setProjects] = useState<any>([]);
+  const [projects, setProjects] = useState<any>(null);
 
   useEffect(() => {
     // Fetch project URLs
@@ -26,7 +26,10 @@ export default function ProjectsSec() {
           .then((results) => {
             setProjects(results);
           })
-          .catch((err) => console.log(err));
+          .catch((err) => {
+            console.log(err)
+            alert(err);
+          });
       })
       .catch((err) => console.log(err));
   }, []);
@@ -45,18 +48,22 @@ export default function ProjectsSec() {
         </p>
       </div>
       <div className="flex flex-wrap gap-10 lg:justify-start justify-center">
-        {loading ? (
-          <div>Loading...</div>
-        ) : (
-          projects.map((project: any, index: number) => (
+       {projects &&(
+        projects.map((project : any , index : any) => {
+          const title = project.videoDetails?.snippet?.title || "Untitled Project";
+          const imageUrl = project.videoDetails?.snippet?.thumbnails?.high?.url ||
+            "https://via.placeholder.com/150"; 
+
+          return(
             <ProjectCard
-              image={project.videoDetails.snippet.thumbnails.high.url}
-              title={project.videoDetails.snippet.title}
-              key={index}
+              image={imageUrl}
+              title={title}
               id={project._id}
+              key={index}
             />
-          ))
-        )}
+          )
+        })
+       )} 
         {error && <div>{error}</div>}
       </div>
     </div>

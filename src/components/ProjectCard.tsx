@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 
 
-export default function ProjectCard({image , title , id} : {image : string; title : string; id : string;}) {
+export default function ProjectCard({image , title , id} : {image : any; title : any; id : any;}) {
   return (
     <div
     className="space-y-2 max-w-80 rounded-lg border cursor-pointer pb-2"
